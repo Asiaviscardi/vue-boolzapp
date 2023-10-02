@@ -55,7 +55,7 @@
 .chat{
     width: 100%;
     height: 80%;
-    background-color: #e3dbd3;
+    background-image: url(img/mine.jpg);
     overflow-y: scroll;
 }
 
