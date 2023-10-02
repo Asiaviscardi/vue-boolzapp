@@ -4,7 +4,19 @@
     box-sizing: border-box;
 }
 
-.container{
+.d-flex{
+    display: flex;
+}
+
+.main-container{
     height: 100vh;
     background: linear-gradient(180deg, #009688 10%, #d9dbd4 10%);
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: pink;
+    height: 90vh;
+    width: 80vw;
 }
