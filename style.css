@@ -16,7 +16,21 @@
 }
 
 .container{
-    background-color: pink;
     height: 90vh;
     width: 80vw;
+}
+
+.sinistra{
+    width: 40%;
+    border-right: 1px solid lightgrey;
+}
+
+.destra{
+    width: 60%;
+}
+
+.sopra, .sotto{
+    width: 100%;
+    height: 10%;
+    background-color: #eaeaea;
 }
