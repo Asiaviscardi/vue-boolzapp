@@ -29,14 +29,19 @@
     width: 60%;
 }
 
-.sopra, .notifiche{
+.sopra{
     width: 100%;
     height: 10%;
     background-color: #eaeaea;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .notifiche{
     background-color: #8edafc;
+    width: 100%;
+    height: 10%;
 }
 
 .cerca{
@@ -63,4 +68,31 @@
     width: 100%;
     height: 10%;
     background-color: #f3eeea;
+}
+
+.avatar-container{
+    width: 20%;
+    height: 100%;
+    align-items: center;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+
+.avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.opzioni{
+    height: 100%;
+    align-items: center;
+}
+
+.opzioni i{
+    margin-left: 15px;
+    cursor: pointer;
 }
