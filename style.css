@@ -45,9 +45,22 @@
     background-color: #fafafa;
 }
 
-.chat{
+.chats{
     width: 100%;
     height: 75%;
     background-color: #ffffff;
     overflow-y: scroll;
+}
+
+.chat{
+    width: 100%;
+    height: 80%;
+    background-color: #e3dbd3;
+    overflow-y: scroll;
+}
+
+.messaggio{
+    width: 100%;
+    height: 10%;
+    background-color: #f3eeea;
 }
