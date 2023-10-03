@@ -42,6 +42,7 @@
     background-color: #8edafc;
     width: 100%;
     height: 10%;
+    align-items: center;
 }
 
 .cerca{
@@ -55,6 +56,8 @@
     height: 75%;
     background-color: #ffffff;
     overflow-y: scroll;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .chat{
@@ -95,4 +98,25 @@
 .opzioni i{
     margin-left: 15px;
     cursor: pointer;
+}
+
+.bell{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f2fbff;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.bell i{
+    margin-left: 15px;
+}
+
+.bell-text{
+    margin-left: 15px;
+}
+
+.bell-text a{
+    color: grey;
 }
