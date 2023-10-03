@@ -146,6 +146,8 @@
     border: 1px solid black;
 }
 
-.chats img{
-
+.contatti{
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
 }
