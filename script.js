@@ -164,7 +164,17 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            counter: 0
+        }
+    },
+    methods:{
+
+        chatSelezionata(i){
+
+            this.counter=i
+
+            console.log("chat",this.counter);
         }
     }
 }).mount('#app')

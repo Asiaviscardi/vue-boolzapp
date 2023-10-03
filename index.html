@@ -90,7 +90,7 @@
 
                 <div class="chats d-flex">
 
-                    <div class="img-container" v-for="(contatto, i) in contatti">
+                    <div class="img-container" v-for="(contatto, i) in contatti" @click="chatSelezionata(i)">
 
                         <div class="avatar contatti d-flex ">
                             
@@ -112,7 +112,7 @@
                         </div>
                         
                     </div>
-                    
+
                 </div>
 
             </div>
