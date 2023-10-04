@@ -129,17 +129,17 @@
 
                         <div class="avatar">
 
-                            foto
+                            <img :src="`img/avatar${contatti[counter].immagine}.jpg`" alt="">
 
                         </div>
 
                         <h4>
     
-                            nome
+                            {{contatti[counter].name}}
     
                             <br>
     
-                            <span>ultimo accesso</span>
+                            <span>ultimo accesso:{{contatti[counter].messages[contatti[counter].messages.length - 1].date}}</span>
                         </h4>
 
                     </div>
