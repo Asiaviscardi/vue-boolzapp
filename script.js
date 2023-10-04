@@ -184,8 +184,22 @@ createApp({
                 status:'sent'
             }
             this.contatti[this.counter].messages.push(messaggio); 
+            this.autoMsg ();
             this.nuovoMessaggio = "";
-        }
+        },
+
+            
+        autoMsg(){
+            setTimeout(() => {
+              const messaggio = {
+                date: dt.now().setLocale("it").toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS),
+                message: "Ok!",
+                status: 'received'
+              }
+              this.contatti[this.counter].messages.push(messaggio);
+            }, 1000);
+          }
+      
 
 
     },
