@@ -174,10 +174,12 @@ createApp({
         chatSelezionata(i){
 
             this.counter = i
-
-            console.log("chat",this.counter);
         }
+    },
+    mounted(){
+        this.data = dt.now().setLocale('it').toLocaleString(dt.TIME_24_SIMPLE)
     }
+
 }).mount('#app')
 
 

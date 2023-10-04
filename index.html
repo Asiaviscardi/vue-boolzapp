@@ -100,7 +100,7 @@
 
                 <div class="chats d-flex">
 
-                    <div class="img-container" v-for="(contatto, i) in contatti" @click="chatSelezionata(i)">
+                    <div class="img-container d-flex " v-for="(contatto, i) in contatti" @click="chatSelezionata(i)">
 
                         <div class="avatar contatti d-flex ">
                             
@@ -112,15 +112,21 @@
 
                                 <br>
 
-                                <span>ultimo messaggio inviato</span>
+                                <span>{{contatto.messages[contatto.messages.length - 1].message}}</span>
 
                                 
                             </h4>
+
                             
-                            <p>ora</p>
                             
                         </div>
                         
+                        <div>
+
+                            <p>{{contatto.messages[contatto.messages.length - 1].date}}</p>
+
+                        </div>
+
                     </div>
 
                 </div>
