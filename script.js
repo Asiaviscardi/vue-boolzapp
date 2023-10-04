@@ -167,7 +167,8 @@ createApp({
                 }
             ],
             counter: 0,
-            nuovoMessaggio:""
+            nuovoMessaggio:"",
+            check:""
         }
     },
     methods:{
@@ -198,9 +199,13 @@ createApp({
               }
               this.contatti[this.counter].messages.push(messaggio);
             }, 1000);
-          }
-      
+        },
 
+        cercaChat(){
+            this.contatti.forEach((contatto) => {
+              contatto.visible = contatto.name.toLowerCase().includes(this.check.toLowerCase())
+            })
+        },
 
     },
     mounted(){

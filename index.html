@@ -94,7 +94,9 @@
 
                     <button><i class="fa-solid fa-magnifying-glass" style="color: #b1b7b9;"></i></button>
 
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat"
+                    @keyup="cercaChat"
+                    v-model.trim="check">
 
                 </div>
 
