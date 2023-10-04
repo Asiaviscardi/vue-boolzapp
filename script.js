@@ -172,7 +172,7 @@ createApp({
 
         chatSelezionata(i){
 
-            this.counter=i
+            this.counter = i
 
             console.log("chat",this.counter);
         }

@@ -169,3 +169,7 @@ h4 span{
     margin-left: 300px;
     color: lightgray;
 }
+
+.destra .sopra h4{
+    margin-left: 15px;
+}
