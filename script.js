@@ -183,8 +183,7 @@ createApp({
                 message: this.nuovoMessaggio,
                 status:'sent'
             }
-            this.contatti[this.counter].messages.push(messaggio);
-            this.autoMsg();
+            this.contatti[this.counter].messages.push(messaggio); 
             this.nuovoMessaggio = "";
         }
 
