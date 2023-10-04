@@ -67,6 +67,7 @@
     height: 80%;
     background-image: url(img/mine.jpg);
     overflow-y: scroll;
+    flex-direction: column;
 }
 
 .messaggio{
@@ -193,7 +194,7 @@ h4 span{
     margin: 0px 25px;
 }
 
-.messaggioRicevuto{
+.received{
     width: 30%;
     background-color: white;
     border-radius: 5px;
@@ -202,11 +203,11 @@ h4 span{
     padding-left: 10px;
 }
 
-.messaggioInviato{
+.sent{
     width: 30%;
     background-color: #d5f9ba;
     border-radius: 5px;
-    float: right;
+    align-self: flex-end;
     margin: 20px;
     padding: 5px;
     padding-left: 10px;

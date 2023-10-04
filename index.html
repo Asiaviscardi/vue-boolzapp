@@ -157,25 +157,17 @@
 
                 </div>
 
-                <div class="chat ">
+                <div class="chat d-flex">
 
-                    <div class="messaggioRicevuto">
+                    <div 
+                    v-for="text in contatti[counter].messages"
+                    :class="text.status">
 
-                        ciao
-
-                        <br>
-
-                        <div class="data">ora</div>
-
-                    </div>
-
-                    <div class="messaggioInviato">
-
-                        ciao, qui va l'array
+                       {{text.message}}
 
                         <br>
 
-                        <div class="data">ora</div>
+                        <div class="data">{{text.date}}</div>
 
                     </div>
 
