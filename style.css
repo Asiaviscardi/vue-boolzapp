@@ -173,3 +173,22 @@ h4 span{
 .destra .sopra h4{
     margin-left: 15px;
 }
+
+.messaggio{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.messaggio input{
+    width: 80%;
+    height: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.messaggio i{
+    font-size: x-large;
+    cursor: pointer;
+    margin: 0px 25px;
+}
