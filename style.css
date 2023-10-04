@@ -61,6 +61,7 @@
     overflow-y: scroll;
     justify-content: space-around;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .chat{
@@ -78,7 +79,7 @@
 }
 
 .avatar-container{
-    width: 20%;
+    width: 40%;
     height: 100%;
     align-items: center;
 }
@@ -144,8 +145,12 @@
 .img-container{
     width: 100%;
     height: 20%;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(219, 219, 219);
     justify-content: space-between;
+}
+
+.img-container:hover{
+    background-color: rgb(191, 191, 191);
 }
 
 .contatti{

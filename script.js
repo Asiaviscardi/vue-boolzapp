@@ -166,7 +166,8 @@ createApp({
                     ],
                 }
             ],
-            counter: 0
+            counter: 0,
+            nuovoMessaggio:""
         }
     },
     methods:{
@@ -174,7 +175,20 @@ createApp({
         chatSelezionata(i){
 
             this.counter = i
+        },
+
+        nuovo(){
+            const messaggio = {
+                date: dt.now().setLocale('it').toLocaleString(dt.TIME_24_SIMPLE),
+                message: this.nuovoMessaggio,
+                status:'sent'
+            }
+            this.contatti[this.counter].messages.push(messaggio);
+            this.autoMsg();
+            this.nuovoMessaggio = "";
         }
+
+
     },
     mounted(){
         this.data = dt.now().setLocale('it').toLocaleString(dt.TIME_24_SIMPLE)

@@ -189,7 +189,9 @@
 
                     <i class="fa-regular fa-face-smile" style="color: #6b7376;"></i>
 
-                    <input type="text" placeholder="scrivi un messaggio">
+                    <input type="text" placeholder="scrivi un messaggio"
+                    v-model="nuovoMessaggio"
+                    @keyup.enter="nuovo">
 
                     <i class="fa-solid fa-microphone" style="color: #6b7376;"></i>
 
